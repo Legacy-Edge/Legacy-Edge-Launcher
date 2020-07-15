@@ -2,7 +2,7 @@
 This program makes it as simple as a double click (and using UAC one time) to get back to the legacy version of Microsft Edge.<br/>
 <a href="https://github.com/ShortDevelopment/Legacy-Edge-Launcher/releases/latest">Download</a>
 
-# If you have the new version of Microsoft Edge already installed
+# If you get a warning and have the new Edge already installed
 No worries! The method below will still work, but after you have launched the app the first time you have to go to `"Settings" -> "Apps"` and there search for `"Edge"`.<br/>
 If you click `"Microsoft Edge"` you should see a `"Modify"` Button that will start the Installer of the new Edge. If you reuse the app, the old version of Microsoft Edge should pop up.
 <img src="Edge%20(Chromium)%20already%20installed.png" />
