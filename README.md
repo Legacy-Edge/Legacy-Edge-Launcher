@@ -8,6 +8,7 @@ The app sets a registry key as described <a href="https://docs.microsoft.com/en-
 `Allowsxs` = `1`<br/>
 <br/>
 If you have the new version already installed you have to launch the new edge installer. The new release (v2) now handels this process automatically wile showing a nice waiting dialog.<br/>
+<br/>
 Have a look at the <a href="#if-you-get-a-warning-and-have-the-new-edge-already-installed">following section</a> for more details.<br/>
 <br/>
 Then the app uses the `IApplicationActivationManager` <i>COM Interface</i> (as describled <a href="https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-iapplicationactivationmanager">here</a>) to start <i>Edge Legacy</i> with the following package name:<br/>
@@ -15,7 +16,9 @@ Then the app uses the `IApplicationActivationManager` <i>COM Interface</i> (as d
 <br/>
 You can find the COM-Refrences in <a href="ShObjIdl_core.header">ShObjIdl_core.h(eader)</a> and the app logic in <a href="Program.vb">Program.vb</a>.<br/>
 <br/>
-Have fun!
+Have fun!<br/>
+<br/>
+<a href="https://shortdevelopment.github.io/Legacy-Edge-Launcher/">Explanation Video</a>
 
 # If you get a warning and have the new Edge already installed
 No worries! The method below will still work, but after you have launched the app the first time you have to go to `"Settings" -> "Apps"` and there search for `"Edge"`.<br/>
