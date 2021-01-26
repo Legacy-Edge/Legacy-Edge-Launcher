@@ -16,7 +16,7 @@ According to [this post](https://techcommunity.microsoft.com/t5/discussions/micr
 Then the app uses the `IApplicationActivationManager` <i>COM Interface</i> (as describled <a href="https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-iapplicationactivationmanager">here</a>) to start <i>Edge Legacy</i> with the following package name:<br/>
 `Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge`<br/>
 <br/>
-You can find the COM-Refrences in <a href="ShObjIdl_core.header">ShObjIdl_core.h(eader)</a> and the app logic in <a href="Program.vb">Program.vb</a>.<br/>
+You can find the COM-Refrences in <a href="ShObjIdl_core.header">ShObjIdl_core.h(eader)</a> and the app logic in <a href="ApplicationActivationManager.vb">ApplicationActivationManager.vb</a>.<br/>
 <br/>
 Have fun!<br/>
 <br/>
