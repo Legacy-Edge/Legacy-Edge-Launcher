@@ -73,6 +73,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationActivationManager.vb" />
+    <Compile Include="Recovery\20H2Update.vb" />
+    <Compile Include="Recovery\IEdgeRecoverySetup.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -90,6 +93,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Recovery\SideBySideExperience.vb" />
     <Compile Include="SetupDialog.Designer.vb">
       <DependentUpon>SetupDialog.vb</DependentUpon>
     </Compile>
