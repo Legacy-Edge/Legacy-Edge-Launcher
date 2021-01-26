@@ -9,10 +9,10 @@ The app sets a registry key as described <a href="https://docs.microsoft.com/en-
 If you have the new version already installed you have to launch the new edge installer. The new release (v2) now handels this process automatically wile showing a nice waiting dialog.   
 Have a look at the <a href="#if-you-get-a-warning-and-have-the-new-edge-already-installed">following section</a> for more details.   
    
-### 20H2 Update
+### 20H2 Update ⚠
 According to [this post](https://techcommunity.microsoft.com/t5/discussions/microsoft-edge-legacy/m-p/1624481/highlight/true#M34656) Legacy Edge Launcher now also deletes this registry key: `SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}` -> `BrowserReplacement`   
    
-   
+### Launch
 Then the app uses the `IApplicationActivationManager` <i>COM Interface</i> (as describled <a href="https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-iapplicationactivationmanager">here</a>) to start <i>Edge Legacy</i> with the following package name:<br/>
 `Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge`<br/>
 <br/>
