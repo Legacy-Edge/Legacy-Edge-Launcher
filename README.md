@@ -1,5 +1,6 @@
 # Legacy-Edge-Launcher
-This program makes it as simple as a double click (and using UAC one time) to get back to the legacy version of Microsft Edge.<br/>
+This program makes it as simple as a double click (and using UAC one time) to get back to the legacy version of Microsft Edge.   
+This tool even works in **20H2** Update!   
 <a href="https://github.com/ShortDevelopment/Legacy-Edge-Launcher/releases/latest">Download</a>
 
 # How it works
