@@ -42,9 +42,13 @@ Module EntryPoint
 
             Threading.Thread.Sleep(1000)
 
-            For Each setup As IEdgeRecoverySetup In NecessarySetups
-                setup.Recover()
-            Next
+            Try
+                For Each setup As IEdgeRecoverySetup In NecessarySetups
+                    setup.Recover()
+                Next
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical)
+            End Try
 
             Try
                 WaitDialog.Invoke(Sub() WaitDialog.Hide())

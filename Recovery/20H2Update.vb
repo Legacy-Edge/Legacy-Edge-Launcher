@@ -18,7 +18,7 @@ Public Class _20H2Update
     End Property
 
     Public Sub Recover() Implements IEdgeRecoverySetup.Recover
-        Dim EdgeRegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}")
-        EdgeRegistryKey.DeleteSubKey("BrowserReplacement")
+        Dim EdgeRegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}", True)
+        EdgeRegistryKey.DeleteValue("BrowserReplacement")
     End Sub
 End Class
