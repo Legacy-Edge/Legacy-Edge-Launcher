@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Legacy Edge Launcher", "Legacy Edge Launcher\Legacy Edge Launcher.vbproj", "{B7FA8F8E-60B2-4C11-9B8C-1503D142EF22}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyEdgeLauncher", "LegacyEdgeLauncher\LegacyEdgeLauncher.csproj", "{61BCE772-6E04-4366-B2BF-48DD948B6E50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortDev.Spartan.Launcher", "ShortDev.Spartan.Launcher\ShortDev.Spartan.Launcher.csproj", "{61BCE772-6E04-4366-B2BF-48DD948B6E50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B7FA8F8E-60B2-4C11-9B8C-1503D142EF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7FA8F8E-60B2-4C11-9B8C-1503D142EF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7FA8F8E-60B2-4C11-9B8C-1503D142EF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7FA8F8E-60B2-4C11-9B8C-1503D142EF22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{61BCE772-6E04-4366-B2BF-48DD948B6E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61BCE772-6E04-4366-B2BF-48DD948B6E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BCE772-6E04-4366-B2BF-48DD948B6E50}.Release|Any CPU.ActiveCfg = Release|Any CPU

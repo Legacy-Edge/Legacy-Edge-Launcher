@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LegacyEdgeLauncher": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
