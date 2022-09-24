@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using ShortDev.Spartan.Launcher.Helpers;
 using System.Diagnostics;
 using System.IO;
@@ -29,7 +29,7 @@ namespace ShortDev.Spartan.Launcher
             {
                 await UninstallAnaheimStableAsync(anaheimKey);
             }
-            
+
             ApplicationActivationManager.ActivateApplication("Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge", null);
         }
 
@@ -42,7 +42,7 @@ namespace ShortDev.Spartan.Launcher
             if (key == null)
                 key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}", true);
 
-            key?.DeleteValue("BrowserReplacement");
+            key?.DeleteValue("BrowserReplacement", false);
         }
 
         static RegistryKey? GetAnaheimStableKey()
@@ -61,13 +61,20 @@ namespace ShortDev.Spartan.Launcher
 
             TaskCompletionSource<bool> promise = new();
 
-            var procces = Process.Start("cmd", $"/c {uninstallCmd}");
+            var procces = Process.Start(new ProcessStartInfo("cmd", $"/c {uninstallCmd}")
+            {
+                CreateNoWindow = true,
+                WindowStyle = ProcessWindowStyle.Hidden
+            });
             procces.EnableRaisingEvents = true;
             procces.Exited += (s, e) => promise.TrySetResult(true);
             if (procces.HasExited)
                 promise.TrySetResult(true);
 
             await promise.Task;
+
+            if (procces.ExitCode != 0)
+                throw new System.Exception();
         }
     }
 }
