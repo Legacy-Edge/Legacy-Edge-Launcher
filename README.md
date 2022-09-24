@@ -2,10 +2,13 @@
 This program makes it as simple as a double click (and using UAC one time) to get back to the legacy version of Microsft Edge (Spartan).   
 
 > **Note**   
+> Participate via [discussions](https://github.com/Legacy-Edge/Legacy-Edge-Launcher/discussions)!
+
+> **Note**   
 > Currently this application does not work any more!
 
 > **Warning**   
-> The legacy version does no longer receive security updates and is lacking a lot of widely used features!
+> Edge Legacy does no longer receive security updates and is lacking a lot of widely used features!
 
 <a href="https://github.com/ShortDevelopment/Legacy-Edge-Launcher/releases/latest">Download</a>   
 
