@@ -1,16 +1,11 @@
 # Legacy-Edge-Launcher
 This program makes it as simple as a double click (and using UAC one time) to get back to the legacy version of Microsft Edge (Spartan).   
 
-> **Note**   
-> Participate via [discussions](https://github.com/Legacy-Edge/Legacy-Edge-Launcher/discussions)!
-
-> **Note**   
+> [!WARNING]
 > Currently this application does not work any more!
 
-> **Warning**   
+> [!CAUTION]
 > Edge Legacy does no longer receive security updates and is lacking a lot of widely used features!
-
-<a href="https://github.com/ShortDevelopment/Legacy-Edge-Launcher/releases/latest">Download</a>   
 
 # How it works
  - The app enables [Side-by-Side mode](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-sysupdate-access-old-edge#side-by-side-experience-with-microsoft-edge-stable-channel-and-microsoft-edge-legacy)
